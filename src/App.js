@@ -1,7 +1,18 @@
+import { useState } from "react";
+import UsersList from "./components/UsersList";
+import UsersForm from "./components/UsersForm";
+
 function App() {
+  const [namesArray, setNamesArray] = useState([]);
+
+  const addName = (name) => {
+    setNamesArray([...namesArray, name]);
+  };
+
   return (
-    <div className="flex justify-center w-screen">
-      <h1 className="text-cyan-500">Hello</h1>
+    <div className="flex w-screen min-h-screen">
+      <UsersList names={namesArray} />
+      <UsersForm addName={addName} />
     </div>
   );
 }
