@@ -28,7 +28,7 @@ const UsersForm = ({ addName }) => {
       </p>
       <form className="" onSubmit={handleSubmit}>
         <input
-          className="border border-gray-300 mb-2 p-1 w-full block"
+          className="border border-gray-300 mb-2 p-1 w-full block rounded-md"
           id="name"
           name="name"
           type="text"
@@ -40,7 +40,7 @@ const UsersForm = ({ addName }) => {
         />
 
         <input
-          className="border border-gray-300 p-1 w-full block"
+          className="border border-gray-300 p-1 w-full block rounded-md"
           id="email"
           name="email"
           type="email"
@@ -62,7 +62,7 @@ const UsersForm = ({ addName }) => {
           <label htmlFor="terms">I agree to the terms</label>
         </div>
 
-        <button className="bg-blue-500 text-white px-4 py-2 rounded-s mt-5 hover:scale-125 duration-300 cursor-pointer">
+        <button className="bg-blue-500 text-white px-8 py-1 rounded-s mt-5 hover:scale-125 duration-300 cursor-pointer">
           I'm in, sign me up!
         </button>
       </form>
